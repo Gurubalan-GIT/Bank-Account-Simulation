@@ -30,7 +30,7 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-              <Button fx:id="loginb" focusTraversable="false" layoutX="149.0" layoutY="270.0" onAction="#Login" prefHeight="40.0" prefWidth="105.0" stylesheets="@../styles/Styles.css" text="LOGIN" textFill="WHITE">
+              <Button fx:id="loginb" focusTraversable="false" layoutX="149.0" layoutY="307.0" onAction="#Login" prefHeight="40.0" prefWidth="105.0" stylesheets="@../styles/Styles.css" text="LOGIN" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

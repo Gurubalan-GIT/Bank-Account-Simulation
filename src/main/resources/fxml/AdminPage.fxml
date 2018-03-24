@@ -4,12 +4,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #4c4177;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.atmmanagementsys.AdminPageController">
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #4c4177;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.atmmanagementsys.AdminPageController">
     <children>
       <Label fx:id="welcome" alignment="TOP_CENTER" layoutX="38.0" layoutY="30.0" prefHeight="35.0" prefWidth="242.0" text="Administration Mode" textFill="WHITE">
          <font>
@@ -40,7 +41,7 @@
       </Pane>
       <Pane layoutX="1010.0" layoutY="87.0" prefHeight="290.0" prefWidth="330.0" style="-fx-background-color: white; -fx-background-radius: 20;">
          <children>
-            <ImageView fx:id="adminimage" fitHeight="186.0" fitWidth="248.0" layoutX="71.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="adminimage" fitHeight="186.0" fitWidth="248.0" layoutX="41.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true"/>
             <Label layoutX="25.0" layoutY="225.0" text="Admin Name : " textFill="#4c4177">
                <font>
                   <Font name="System Bold" size="16.0" />

@@ -22,4 +22,7 @@ Includes smooth transitions and other minor UI tweaks with a rich dashboard UI.
 ## License
 This software is copyrighted and hence licensed.[Click here](LICENSE) to view the license. 
 
+## Screensots
+<img src="Images/1.png" height="300"> <img src="Images/2.png" height="300"> <img src="Images/3.png" height="300"> <img src="Images/4.png" height="300"> <img src="Images/5.png" height="300">
+
 _Thank you for stopping by._

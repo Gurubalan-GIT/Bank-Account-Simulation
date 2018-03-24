@@ -20,7 +20,7 @@
     <children>
       <Pane layoutX="212.0" layoutY="69.0" prefHeight="361.0" prefWidth="401.0" style="-fx-background-color: white; -fx-background-radius: 15;">
          <children>
-            <TextField fx:id="useridtf" layoutX="40.0" layoutY="110.0" prefHeight="45.0" prefWidth="305.0" promptText="User ID" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-border-radius: 20; -fx-background-radius: 22;">
+            <TextField fx:id="useridtf" layoutX="57.0" layoutY="110.0" prefHeight="45.0" prefWidth="305.0" promptText="User ID" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-border-radius: 20; -fx-background-radius: 22;">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -35,17 +35,17 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <PasswordField fx:id="passwordtf" layoutX="40.0" layoutY="185.0" prefHeight="45.0" prefWidth="305.0" promptText="Password" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
+            <PasswordField fx:id="passwordtf" layoutX="57.0" layoutY="185.0" prefHeight="45.0" prefWidth="305.0" promptText="Password" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </PasswordField>
-            <ImageView fitWidth="25.0" layoutX="355.0" layoutY="120.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitWidth="25.0" layoutX="14.0" layoutY="120.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../icons/User.png" />
                </image>
             </ImageView>
-            <ImageView fitWidth="25.0" layoutX="355.0" layoutY="195.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitWidth="25.0" layoutX="14.0" layoutY="195.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../icons/Password.png" />
                </image>

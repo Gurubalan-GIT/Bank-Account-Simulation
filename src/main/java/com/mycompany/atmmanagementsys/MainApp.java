@@ -1,3 +1,8 @@
+/*
+MIT License
+Copyright (c) 2018 Guru
+Only for Educational purposes and for reference.
+*/
 package com.mycompany.atmmanagementsys;
 
 import javafx.application.Application;
@@ -11,7 +16,6 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
-
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
@@ -26,7 +30,6 @@ public class MainApp extends Application {
         Media someSound = new Media(getClass().getResource("/audio/Welcome.mp3").toString());    
         MediaPlayer mp = new MediaPlayer(someSound);
         mp.play();
-        
     }
     public static void main(String[] args) {
         launch(args);

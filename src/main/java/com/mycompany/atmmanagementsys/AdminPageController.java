@@ -33,56 +33,36 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 public class AdminPageController implements Initializable {
-    
-    
-    
     @FXML
     private Button loadcusinfo;
-    
      @FXML
     private Image image;
-     
      @FXML
     private TextField num;
-    
      @FXML
     private TableView<CustomerData> customertable;
-
     @FXML
     private TableColumn<CustomerData,Integer> cusid;
-
     @FXML
     private TableColumn<CustomerData,String> cusname;
-
     @FXML
     private TableColumn<CustomerData,String> cusaddress;
-
     @FXML
     private TableColumn<CustomerData,String> cusemail;
-
     @FXML
     private TableColumn<CustomerData,String> cusphone;
-
     @FXML
     private TableColumn<CustomerData,Integer> cusbalance;
-    
     private ObservableList<CustomerData>data;
-    
     @FXML
     private Label welcome;
-
-    
     String AdminID;
-    
     @FXML
     private ImageView adminimage;
-    
     @FXML
     private Label adminname;
-
     @FXML
     private Label adminid;
-
     public void GetAdminID(String id) throws SQLException, FileNotFoundException, IOException{
         AdminID = id;
         Connection con = DbConnection.Connection();
@@ -93,13 +73,13 @@ public class AdminPageController implements Initializable {
             adminname.setText(rs.getString("name"));
             adminid.setText(rs.getString("id"));
             InputStream is = rs.getBinaryStream("image");
-            OutputStream os = new FileOutputStream(new File("adminimage.jpg"));
+            OutputStream os = new FileOutputStream(new File("adminimages.jpeg"));
             byte[] content = new byte[1024];
             int s = 0;
             while((s= is.read(content))!= -1){
             os.write(content, 0, s);
             }
-            Image image = new Image("file:adminimage.jpg");
+            Image image = new Image("file:adminimages.jpeg");
             adminimage.setImage(image);
             adminimage.setFitWidth(248);
             adminimage.setFitHeight(186);
@@ -119,120 +99,85 @@ public class AdminPageController implements Initializable {
     ResultSet rs = ps.executeQuery();
     while(rs.next()){
     data.add(new CustomerData(rs.getInt("id"),rs.getString("name"),rs.getString("address"),rs.getString("email"),rs.getString("Phone"),rs.getInt("balance")));
-
     }
             cusid.setCellValueFactory(new PropertyValueFactory<CustomerData,Integer>("CustomerId"));
             cusname.setCellValueFactory(new PropertyValueFactory<CustomerData,String>("CustomerName"));
             cusaddress.setCellValueFactory(new PropertyValueFactory<CustomerData,String>("CustomerAddress"));
             cusemail.setCellValueFactory(new PropertyValueFactory<CustomerData,String>("CustomerEmail"));
-             
             cusphone.setCellValueFactory(new PropertyValueFactory<CustomerData,String>("CustomerPhone"));
             cusbalance.setCellValueFactory(new PropertyValueFactory<CustomerData,Integer>("CustomerBalance"));
-            
             customertable.setItems(null);
             customertable.setItems(data);
-            
-            
             ps.close();
             rs.close();
             con.close();
-    
     }
      @FXML
     public void AddCustomerData(ActionEvent event) throws IOException{
-    
-    
     Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/fxml/AddCustomer.fxml"));
         loader.load();
         Parent root = loader.getRoot();
-
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/AddCustomer.css");
-
         Image icon = new Image("/icons/adduser.png");
         stage.getIcons().add(icon);
-
         stage.setResizable(false);
         stage.sizeToScene();
-        
         stage.setTitle("Add Customer Page");
-
         stage.setScene(scene);
         stage.show();
-
     }
     @FXML
     public void EditCustomerData(ActionEvent event) throws IOException{
-    
-    
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/fxml/EditCustomer.fxml"));
         loader.load();
         Parent root = loader.getRoot();
-
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/EditCustomer.css");
-
         Image icon = new Image("/icons/edituser.png");
         stage.getIcons().add(icon);
-
         stage.setResizable(false);
         stage.sizeToScene();
-        
         stage.setTitle("Edit Customer Page");
-
         stage.setScene(scene);
         stage.show();
 
     }
     @FXML
     public void DeleteCustomerData(ActionEvent event) throws IOException{
-    
-    
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/fxml/DeleteCustomer.fxml"));
         loader.load();
         Parent root = loader.getRoot();
-
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/DeleteCustomer.css");
-
         Image icon = new Image("/icons/deleteuser.png");
         stage.getIcons().add(icon);
-
         stage.setResizable(false);
         stage.sizeToScene();
-        
         stage.setTitle("Delete Customer Page");
-
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void ResetPassword(ActionEvent event) throws IOException{
-    
-    
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/fxml/PasswordReset.fxml"));
         loader.load();
         Parent root = loader.getRoot();
-
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/PasswordReset.css");
-
         Image icon = new Image("/icons/Password.png");
         stage.getIcons().add(icon);
-
         stage.setResizable(false);
         stage.sizeToScene();
-        
         stage.setTitle("Passwor Reset Page");
-
         stage.setScene(scene);
         stage.show();
     }

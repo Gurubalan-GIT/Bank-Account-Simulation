@@ -3,25 +3,17 @@ package com.mycompany.atmmanagementsys;
 
 import java.util.Random;
 
-
 public class Quotes {
-    
     String quote ;
-    
     public String returnQuotes(){
-    
-    
     Random ran = new Random();
         int num = ran.nextInt(7);
-
         switch (num) {
-
             case 0:
                quote  = "To accomplish great things, we\n"
                         + "must not only act, but also dream,\n"
                         + "not only plan, but also believe.\n\n"
                         + "- Anatole France";
-                
                 break;
             case 1:
                 quote  = "Victory is always possible for the\n"
@@ -55,15 +47,7 @@ public class Quotes {
                 quote  = "Without a goal, discipline is\n"
                         + "nothing but self-punishment.\n\n"
                         + "- Elanor Roosevelt";
-    
-    
-    
     }
-    
-    
     return quote;
-    
-    
     }
-    
 }

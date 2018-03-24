@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1040.0" style="-fx-background-color: #C51162;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.atmmanagementsys.AccountInfoController">
+    <children>
+      <Pane layoutX="440.0" layoutY="50.0" prefHeight="525.0" prefWidth="560.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="35.0" layoutY="39.0" text="User ID" textFill="#c51162">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="104.0" text="Username" textFill="#c51162">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="189.0" text="Address" textFill="#c51162">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="339.0" text="Phone" textFill="#c51162">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="274.0" text="Email" textFill="#c51162">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="404.0" text="Current Balance" textFill="#c51162">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="uid" layoutX="220.0" layoutY="30.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-color: #C51162; -fx-border-radius: 20; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="uname" layoutX="220.0" layoutY="95.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-color: #C51162; -fx-border-radius: 20; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="uemail" layoutX="220.0" layoutY="265.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-color: #C51162; -fx-border-radius: 20; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="uphone" layoutX="220.0" layoutY="330.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-color: #C51162; -fx-border-radius: 20; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="ubalance" layoutX="220.0" layoutY="395.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-color: #C51162; -fx-border-radius: 20; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></TextField>
+            <Button layoutX="420.0" layoutY="465.0" mnemonicParsing="false" onAction="#AccountInfo" prefHeight="40.0" prefWidth="100.0" text="Load Info">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <TextArea fx:id="uaddress" layoutX="220.0" layoutY="160.0" prefHeight="85.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 28; -fx-border-color: #C51162; -fx-border-radius: 26; -fx-border-width: 2; -fx-text-fill: black; -fx-font-size: 16;" wrapText="true" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="22.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/22111.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="101.0" layoutY="33.0" prefHeight="35.0" prefWidth="310.0" text="A Smarter Way Of Banking." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="quotedisai" editable="false" focusTraversable="false" layoutX="30.0" layoutY="310.0" prefHeight="200.0" prefWidth="350.0" text="Do Not Save What Is Left After Spending , Spend What Is Left After Saving." wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>

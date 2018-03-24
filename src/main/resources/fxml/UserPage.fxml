@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #00BCD4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.atmmanagementsys.UserPageController">
+    <children>
+      <Label fx:id="welcome" alignment="CENTER" layoutX="595.0" layoutY="25.0" prefHeight="60.0" prefWidth="685.0" text="WELCOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="595.0" layoutY="105.0" prefHeight="520.0" prefWidth="685.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label fx:id="mssg1" layoutX="40.0" layoutY="220.0" prefHeight="40.0" prefWidth="251.0" textFill="#f50000">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button focusTraversable="false" layoutX="55.0" layoutY="60.0" mnemonicParsing="false" onAction="#DepositMoney" prefHeight="85.0" prefWidth="250.0" text="Deposit Money" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="55.0" layoutY="215.0" mnemonicParsing="false" onAction="#Withdraw" prefHeight="85.0" prefWidth="250.0" text="Withdraw Money" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="55.0" layoutY="370.0" mnemonicParsing="false" onAction="#CheckBalance" prefHeight="85.0" prefWidth="250.0" text="Check Balance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="380.0" layoutY="59.0" mnemonicParsing="false" onAction="#ChangePassword" prefHeight="85.0" prefWidth="250.0" text="Change Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="380.0" layoutY="215.0" mnemonicParsing="false" onAction="#BalanceTransfer" prefHeight="85.0" prefWidth="250.0" text="Balance Transfer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="380.0" layoutY="370.0" mnemonicParsing="false" onAction="#AccountInfo" prefHeight="85.0" prefWidth="250.0" text="Information" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <TextArea fx:id="quotedis" editable="false" layoutX="35.0" layoutY="350.0" prefHeight="275.0" prefWidth="500.0" stylesheets="@../styles/UserPage.css" text="Do Not Save What Is Left After Spending , Spend What Is Left After Saving." wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="35.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/5.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="135.0" layoutY="80.0" prefHeight="50.0" prefWidth="415.0" text="A Smarter Way Of Banking." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

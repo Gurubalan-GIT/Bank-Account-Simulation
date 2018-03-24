@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #4c4177;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.atmmanagementsys.AdminPageController">
+    <children>
+      <Label fx:id="welcome" alignment="TOP_CENTER" layoutX="38.0" layoutY="30.0" prefHeight="35.0" prefWidth="242.0" text="Administration Mode" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customertable" layoutX="38.0" layoutY="89.0" prefHeight="575.0" prefWidth="947.0">
+        <columns>
+          <TableColumn fx:id="cusid" editable="false" prefWidth="65.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="ID" />
+          <TableColumn fx:id="cusname" editable="false" prefWidth="167.99996948242188" resizable="false" sortable="false" text="Name" />
+            <TableColumn fx:id="cusaddress" editable="false" prefWidth="310.0" resizable="false" sortable="false" text="Address" />
+            <TableColumn fx:id="cusemail" editable="false" prefWidth="221.0" resizable="false" sortable="false" text="Email" />
+            <TableColumn fx:id="cusphone" editable="false" prefWidth="105.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Phone" />
+            <TableColumn fx:id="cusbalance" editable="false" prefWidth="78.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Balance" />
+        </columns>
+      </TableView>
+      <Pane layoutX="1010.0" layoutY="389.0" prefHeight="275.0" prefWidth="330.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" onAction="#AddCustomerData" prefHeight="55.0" prefWidth="148.0" text="ADD CUSTOMER" />
+            <Button layoutX="172.0" layoutY="28.0" mnemonicParsing="false" onAction="#EditCustomerData" prefHeight="55.0" prefWidth="148.0" text="EDIT CUSTOMER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="113.0" mnemonicParsing="false" onAction="#DeleteCustomerData" prefHeight="55.0" prefWidth="148.0" text="DELETE CUSTOMER" />
+            <Button layoutX="172.0" layoutY="113.0" mnemonicParsing="false" onAction="#ResetPassword" prefHeight="55.0" prefWidth="148.0" text="PASSWORD RESET" />
+            <Button fx:id="loadcusinfo" layoutX="82.0" layoutY="195.0" mnemonicParsing="false" onAction="#LoadCustomerData" prefHeight="55.0" prefWidth="180.0" text="LOAD INFFORMATION" />
+         </children>
+      </Pane>
+      <Pane layoutX="1010.0" layoutY="87.0" prefHeight="290.0" prefWidth="330.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <ImageView fx:id="adminimage" fitHeight="186.0" fitWidth="248.0" layoutX="71.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="25.0" layoutY="225.0" text="Admin Name : " textFill="#4c4177">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="253.0" text="Admin ID : " textFill="#4c4177">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="adminname" layoutX="145.0" layoutY="225.0" text="Admin Name" textFill="#4c4177">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="adminid" layoutX="115.0" layoutY="253.0" text="Admin ID" textFill="#4c4177">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="1103.0" layoutY="42.0" text="Admin Information" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

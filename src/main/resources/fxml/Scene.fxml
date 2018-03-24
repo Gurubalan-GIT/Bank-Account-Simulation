@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="825.0" style="-fx-background-color: #39b5ff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.atmmanagementsys.FXMLController">
+    <children>
+      <Pane layoutX="380.0" layoutY="44.0" prefHeight="415.0" prefWidth="410.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+         <children>
+            <TextField fx:id="useridtf" layoutX="40.0" layoutY="110.0" prefHeight="45.0" prefWidth="305.0" promptText="User ID" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-border-radius: 20; -fx-background-radius: 22;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="mssg" layoutX="40.0" layoutY="250.0" prefHeight="40.0" prefWidth="305.0" textFill="#f50000">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+              <Button fx:id="loginb" focusTraversable="false" layoutX="240.0" layoutY="315.0" onAction="#Login" prefHeight="40.0" prefWidth="105.0" stylesheets="@../styles/Styles.css" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="passwordtf" layoutX="40.0" layoutY="185.0" prefHeight="45.0" prefWidth="305.0" promptText="Password" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitWidth="25.0" layoutX="355.0" layoutY="120.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/User.png" />
+               </image>
+            </ImageView>
+            <ImageView fitWidth="25.0" layoutX="355.0" layoutY="195.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Password.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="40.0" layoutY="45.0" style="-fx-background-color: #39b5ff; -fx-background-radius: 20;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <RadioButton fx:id="userrb" focusTraversable="false" mnemonicParsing="false" prefHeight="57.0" prefWidth="90.0" selected="true" text="USER" textFill="WHITE">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="UserOrAdmin" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="adminrb" focusTraversable="false" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="ADMIN" textFill="WHITE" toggleGroup="$UserOrAdmin" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="225.0" fitWidth="360.0" layoutX="11.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/LogInPage%20Image.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="66.0" layoutY="49.0" prefHeight="35.0" prefWidth="292.0" text="Smarter Way Of Banking." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

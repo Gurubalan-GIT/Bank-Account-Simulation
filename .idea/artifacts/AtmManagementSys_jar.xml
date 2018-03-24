@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AtmManagementSys:jar">
+    <output-path>$PROJECT_DIR$/artifacts/AtmManagementSys_jar</output-path>
+    <root id="archive" name="AtmManagementSys.jar">
+      <element id="module-output" name="AtmManagementSys" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.16.1/sqlite-jdbc-3.16.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/mail/mail/1.4/mail-1.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

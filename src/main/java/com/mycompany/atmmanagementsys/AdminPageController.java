@@ -73,17 +73,16 @@ public class AdminPageController implements Initializable {
             adminname.setText(rs.getString("name"));
             adminid.setText(rs.getString("id"));
             InputStream is = rs.getBinaryStream("image");
-            OutputStream os = new FileOutputStream(new File("adminimages.jpeg"));
+            OutputStream os = new FileOutputStream(new File("adminimage.jpeg"));
             byte[] content = new byte[1024];
             int s = 0;
             while((s= is.read(content))!= -1){
             os.write(content, 0, s);
             }
-            Image image = new Image("file:adminimages.jpeg");
+            Image image = new Image("file:adminimage.jpeg");
             adminimage.setImage(image);
             adminimage.setFitWidth(248);
             adminimage.setFitHeight(186);
-            
             Circle clip = new Circle(93,93,93);
             adminimage.setClip(clip);
         }

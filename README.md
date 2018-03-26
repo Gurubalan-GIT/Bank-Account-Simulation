@@ -2,9 +2,8 @@
 This is a robust software made with **Java**, **JavaFX** and **SQLite** database as backend. It contains all the features of banking applications with 
 material UI and UX. To look at the **SQLite** database file: [Click here](src/main/resources/db).
 
-## Squlite 3.
-To get started off, first to execute tables and SQLite commands you need to install `Squlite3`. Head over [here](https://www.sqlite.org/2018/sqlite-tools-win32-x86-3220000.zip) (WindowsOS) for downloading it. (WindowsOS).
-Then you can execute and create tables within the commandline.
+## Sqlite 3.
+To get started off, first to execute tables and SQLite commands you need to install `Sqlite3`. Head over [here](https://www.sqlite.org/2018/sqlite-tools-win32-x86-3220000.zip) (WindowsOS) for downloading it.Then you can execute and create tables within the commandline.
 ### Alternative:
 The alternative GUI experience is the `Sqlite DB browser`.[Click here](http://sqlitebrowser.org/) to download. 
 

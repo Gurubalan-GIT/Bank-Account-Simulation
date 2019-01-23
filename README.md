@@ -1,4 +1,4 @@
-# Bank Account Simulation.
+# Bank Account Simulation. [![](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/Gurubalan-GIT/BankAccountSimulation) [![](https://img.shields.io/badge/coverage-100-green.svg)](https://github.com/Gurubalan-GIT/BankAccountSimulation)
 This is a robust software made with **Java**, **JavaFX** and **SQLite** database as backend. It contains all the features of banking applications with 
 material UI and UX. To look at the **SQLite** database file: [Click here](src/main/resources/db).
 
